@@ -12,7 +12,6 @@ allprojects {
     version = "0.0.1-SNAPSHOT"
     repositories {
         mavenCentral()
-        maven { url = uri("https://artifactory-oss.prod.netflix.net/artifactory/maven-oss-candidates") }
     }
 }
 
@@ -29,14 +28,7 @@ subprojects {
     // ktlint
     apply(plugin = "org.jlleitschuh.gradle.ktlint")
 
-    configure<io.spring.gradle.dependencymanagement.dsl.DependencyManagementExtension> {
-        imports {
-            mavenBom("org.springframework.cloud:spring-cloud-dependencies:2022.0.1")
-        }
-    }
-
     dependencies {
-        implementation(platform(libs.spring.cloud.dependencies))
         implementation(libs.kotlin.reflect)
         implementation(libs.kotlin.stdlib.jdk8)
         implementation(libs.jackson.module.kotlin)

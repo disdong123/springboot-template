@@ -5,15 +5,15 @@ import kr.disdong.gradle.multi.module.template.domain.jpa.domain.PostEntity
 import kr.disdong.gradle.multi.module.template.domain.jpa.domain.QPostEntity
 import org.springframework.data.jpa.repository.JpaRepository
 
-interface PostEntityRepository : JpaRepository<PostEntity, Long>, PostEntityRepositoryCustom
+interface PostRepository : JpaRepository<PostEntity, Long>, PostRepositoryCustom
 
-interface PostEntityRepositoryCustom {
+interface PostRepositoryCustom {
     fun hello(): MutableList<PostEntity>
 }
 
-class PostEntityRepositoryImpl(
+class PostRepositoryImpl(
     private val jpaQueryFactory: JPAQueryFactory
-) : PostEntityRepositoryCustom {
+) : PostRepositoryCustom {
 
     override fun hello(): MutableList<PostEntity> {
 
