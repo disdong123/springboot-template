@@ -1,3 +1,3 @@
 dependencies {
-    implementation(project(":subprojects:domain-jpa"))
+    implementation(project(":subprojects:common"))
 }

@@ -2,7 +2,8 @@ rootProject.name = "gradle-multi-module-template"
 
 include(
     "subprojects:domain",
-    "subprojects:domain-jpa",
+    "subprojects:jpa",
+    "subprojects:common",
     "subprojects:server"
 )
 
