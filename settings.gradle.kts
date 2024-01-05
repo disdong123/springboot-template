@@ -1,11 +1,11 @@
 rootProject.name = "gradle-multi-module-template"
 
 include(
-    "subprojects:domain",
-    "subprojects:jdbc",
-    "subprojects:jpa",
-    "subprojects:common",
-    "subprojects:server"
+    "subp-domain",
+    "subp-jdbc",
+    "subp-jpa",
+    "subp-common",
+    "subp-server"
 )
 
 enableFeaturePreview("VERSION_CATALOGS")

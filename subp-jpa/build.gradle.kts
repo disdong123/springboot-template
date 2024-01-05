@@ -4,7 +4,7 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":subprojects:domain"))
+    implementation(project(":subp-domain"))
     api(libs.spring.boot.starter.data.jpa)
     api(libs.querydsl.jpa) {
         artifact {

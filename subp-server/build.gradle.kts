@@ -1,7 +1,7 @@
 dependencies {
-    implementation(project(":subprojects:domain"))
-    implementation(project(":subprojects:jpa"))
-    implementation(project(":subprojects:common"))
+    implementation(project(":subp-domain"))
+    implementation(project(":subp-jpa"))
+    implementation(project(":subp-common"))
     implementation(libs.spring.boot.starter.web)
 }
 
