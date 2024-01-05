@@ -1,4 +1,4 @@
-rootProject.name = "gradle-multi-module-template"
+rootProject.name = "springboot-template"
 
 include(
     "subp-domain",
