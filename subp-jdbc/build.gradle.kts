@@ -1,5 +1,5 @@
 dependencies {
     implementation(project(":subp-domain"))
-    api("org.springframework.data:spring-data-jdbc")
+    api(libs.spring.boot.starter.data.jdbc)
     runtimeOnly(libs.mysql.connector.java)
 }

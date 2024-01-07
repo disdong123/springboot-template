@@ -1,11 +1,13 @@
 package kr.disdong.springboot.template.domain.module.user.model
 
-interface PlainUser {
+interface PlainUser : UserData
+
+interface User : UserData {
+    fun updateName(name: String)
+}
+
+interface UserData {
     val id: Long
     var name: String
     val phone: String
-}
-
-interface User : PlainUser {
-    fun updateName(name: String)
 }
