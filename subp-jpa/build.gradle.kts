@@ -4,9 +4,9 @@ plugins {
 }
 
 dependencies {
-    api(project(":subp-domain"))
+    implementation(project(":subp-domain"))
     api(libs.spring.boot.starter.data.jpa)
-    api(libs.querydsl.jpa) {
+    implementation(libs.querydsl.jpa) {
         artifact {
             classifier = "jakarta"
         }
