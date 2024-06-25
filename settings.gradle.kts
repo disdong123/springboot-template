@@ -1,11 +1,11 @@
 rootProject.name = "springboot-template"
 
 include(
-    "subp-domain",
-    "subp-jdbc",
-    "subp-jpa",
-    "subp-common",
-    "subp-server"
+    "template-domain",
+    "template-infrastructure:jpa",
+    "template-infrastructure:feign",
+    "template-common",
+    "template-server"
 )
 
 enableFeaturePreview("VERSION_CATALOGS")
