@@ -3,6 +3,7 @@ rootProject.name = "springboot-template"
 include(
     "template-domain",
     "template-infrastructure:jpa",
+    "template-infrastructure:exposed",
     "template-infrastructure:feign",
     "template-common",
     "template-server"
@@ -24,7 +25,7 @@ dependencyResolutionManagement {
     }
     versionCatalogs {
         create("libs") {
-            from("kr.disdong:spring-version-catalog:0.0.27")
+            from("kr.disdong:spring-version-catalog:0.0.29")
         }
     }
 }
