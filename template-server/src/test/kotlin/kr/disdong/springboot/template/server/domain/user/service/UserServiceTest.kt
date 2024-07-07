@@ -1,15 +1,15 @@
 package kr.disdong.springboot.template.server.domain.user.service
 
+import kr.disdong.springboot.template.domain.user.fixture.UserFixture
 import kr.disdong.springboot.template.domain.user.service.UserManager
-import org.junit.jupiter.api.Assertions.assertNull
+import kr.disdong.springboot.template.server.domain.user.dto.CreateUserBody
+import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.BeforeEach
-import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 import org.mockito.Mockito.mock
 import org.mockito.kotlin.any
 import org.mockito.kotlin.whenever
 
-@Disabled
 internal class UserServiceTest {
 
     private val userManager: UserManager = mock()
@@ -17,23 +17,22 @@ internal class UserServiceTest {
 
     @BeforeEach
     fun setup() {
-        whenever(userManager.getUser(any())).thenReturn(null)
-        // whenever(userManager.create(any())).thenReturn(UserJpaImpl)
+        whenever(userManager.getUser(any())).thenReturn(UserFixture.any())
+        whenever(userManager.create(any())).thenReturn(UserFixture.any())
     }
 
     @Test
     fun `샘플 테스트 1`() {
         val response = sut.getByUserId(1)
-        assertNull(response)
+        assertNotNull(response)
     }
 
-    // @Test
-    // fun `샘플 테스트 2`() {
-    //     // given, when
-    //     val response = sut.create(CreateUserBody("name", "010"))
-    //
-    //     // then
-    //     assertEquals("name", response.name)
-    //     assertEquals("010", response.phone)
-    // }
+    @Test
+    fun `샘플 테스트 2`() {
+        // given, when
+        val response = sut.create(CreateUserBody("name", "010"))
+
+        // then
+        assertNotNull(response)
+    }
 }
