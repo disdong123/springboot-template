@@ -9,7 +9,7 @@ import kr.disdong.springboot.template.jpa.domain.user.repository.UserJpaReposito
 import org.springframework.stereotype.Repository
 
 @Repository
-class UserRepositoryImpl(
+class UserRepositoryJpaImpl(
     private val userJpaRepository: UserJpaRepository
 ) : UserRepository {
     override fun findByUserId(userId: Long): User? {
