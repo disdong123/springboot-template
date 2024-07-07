@@ -40,6 +40,7 @@ subprojects {
         testImplementation(libs.spring.boot.starter.test)
         testImplementation(libs.mockk)
         testImplementation(libs.fixture.monkey.starter.kotlin)
+        testImplementation(libs.mockito.kotlin)
     }
 
     java.sourceCompatibility = JavaVersion.VERSION_19

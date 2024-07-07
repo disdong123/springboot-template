@@ -4,7 +4,6 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":template-domain"))
     api(libs.spring.boot.starter.data.jpa)
     implementation(libs.querydsl.jpa) {
         artifact {

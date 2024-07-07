@@ -11,7 +11,7 @@ interface UserCustomJpaRepository {
     fun findByUserId(id: Long): UserEntity?
 }
 
-class UserJpaRepositoryImpl(
+class UserCustomJpaRepositoryImpl(
     private val jpaQueryFactory: JPAQueryFactory,
 ) : UserCustomJpaRepository {
 

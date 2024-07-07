@@ -1,6 +1,5 @@
 dependencies {
     implementation(project(":template-domain"))
-    implementation(project(":template-infrastructure:jpa"))
     implementation(project(":template-common"))
     implementation(libs.spring.boot.starter.web)
 }

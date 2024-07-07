@@ -1,9 +1,9 @@
-package kr.disdong.springboot.template.jpa.domain.user.model.impl
+package kr.disdong.springboot.template.domain.user.model.impl
 
 import kr.disdong.springboot.template.domain.user.model.User
 import kr.disdong.springboot.template.jpa.domain.user.model.UserEntity
 
-class UserImpl(
+class UserJpaImpl(
     private val entity: UserEntity,
 ) : User {
 
@@ -17,4 +17,8 @@ class UserImpl(
     override fun updateName(name: String) {
         entity.name = name
     }
+}
+
+fun UserEntity.toUser(): User {
+    return UserJpaImpl(this)
 }
