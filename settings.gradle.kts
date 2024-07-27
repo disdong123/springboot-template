@@ -9,8 +9,6 @@ include(
     "template-server"
 )
 
-enableFeaturePreview("VERSION_CATALOGS")
-
 dependencyResolutionManagement {
     repositories {
         mavenLocal()

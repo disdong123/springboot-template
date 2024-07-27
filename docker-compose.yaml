@@ -3,7 +3,7 @@ services:
     container_name: springboot_template_mysql
     image: mysql:8
     ports:
-      - '3306:3306'
+      - '3307:3306'
     environment:
       TZ: 'Asia/Seoul'
       MYSQL_DATABASE: springboot_template
