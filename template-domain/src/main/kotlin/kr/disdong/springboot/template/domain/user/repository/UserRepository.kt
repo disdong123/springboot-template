@@ -8,4 +8,6 @@ interface UserRepository {
     fun findByUserId(userId: Long): User?
 
     fun save(user: PlainUser): User
+
+    fun deleteAll()
 }

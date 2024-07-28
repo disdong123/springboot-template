@@ -24,4 +24,8 @@ class UserRepositoryJpaImpl(
             )
         ).toUser()
     }
+
+    override fun deleteAll() {
+        userJpaRepository.deleteAll()
+    }
 }
