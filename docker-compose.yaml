@@ -1,4 +1,14 @@
 services:
+  redis:
+    container_name: springboot_template_redis
+    image: redis:latest
+    healthcheck:
+      test: [ "CMD", "redis-cli", "ping" ]
+      interval: 2s
+      timeout: 3s
+      retries: 60
+    networks:
+      - springboot-template
   mysql:
     container_name: springboot_template_mysql
     image: mysql:8
