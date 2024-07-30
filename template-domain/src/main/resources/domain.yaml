@@ -1,5 +1,9 @@
+spring.config.activate.on-profile: default
 spring:
   config:
     import:
       - jpa-mysql.yaml
       - redis.yaml
+
+---
+spring.config.activate.on-profile: dev

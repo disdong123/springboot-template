@@ -1,0 +1,13 @@
+spring.config.activate.on-profile: test
+server:
+  servlet:
+    context-path: /api
+
+spring:
+  config:
+    import:
+      - domain-test.yaml
+
+springdoc:
+  swagger-ui:
+    path: /docs

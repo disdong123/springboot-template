@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 
-class RedisTest : IntegrationTestConfiguration() {
+class UserCacheTest : IntegrationTestConfiguration() {
 
     @Autowired
     private lateinit var userCache: UserCache
