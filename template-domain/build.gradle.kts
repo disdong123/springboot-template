@@ -1,6 +1,7 @@
 dependencies {
     implementation(project(":template-common"))
     implementation(project(":template-infrastructure:jpa"))
+    implementation(project(":template-infrastructure:redis"))
 }
 
 val testJar by tasks.registering(Jar::class) {

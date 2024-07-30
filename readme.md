@@ -24,7 +24,8 @@ SpringBoot 기반 서버 구현을 위한 템플릿입니다.
     # Remove pre-commit if you don't need
     rm .husky/pre-commit
    ```
-3. [Set environment vasdfariables for version catalog](https://github.com/disdong123/version-catalog)
+3. [Set environment variables for version catalog](https://github.com/disdong123/version-catalog)
+
 
 ### Architecture
 #### Flow

@@ -8,6 +8,7 @@ dependencies {
     implementation(libs.spring.boot.starter.web)
 
     testImplementation(project(path = ":template-domain", configuration = "testJarConfig"))
+    testImplementation(libs.embedded.redis)
     testRuntimeOnly(libs.h2.database)
 }
 
